@@ -171,6 +171,35 @@ body {
     margin: 0 auto 2rem;
 }
 
+/* Szekciók */
+
+section {
+  padding: 6rem 0;
+}
+
+section:nth-of-type(even) {
+  background: var(--clr-surface);
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--clr-accent);
+  border-radius: 2px;
+}
+
 /* HOBBIK */
 
 .hobbies-grid {
