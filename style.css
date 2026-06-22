@@ -379,3 +379,38 @@ footer {
     color: var(--clr-text-muted);
     font-size: 0.9rem;
 }
+
+/* RESZPONZÍV (mobil) */
+
+@media (max-width: 680px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        background: var(--clr-bg);
+        border-bottom: 1px solid var(--clr-border);
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .section-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
