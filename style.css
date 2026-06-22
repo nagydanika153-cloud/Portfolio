@@ -331,3 +331,51 @@ section:nth-of-type(even) {
     gap: 0.75rem;
     flex-wrap: wrap;
 }
+
+/* KAPCSOLAT */
+
+#contact {
+    text-align: center;
+}
+
+.contact-sub {
+    color: var(--clr-text-muted);
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--clr-text);
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius);
+    transition: border-color var(--transition), color var(--transition), transform var(--transition);
+}
+
+.contact-item:hover {
+    border-color: var(--clr-accent);
+    color: var(--clr-accent);
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-top: 1px solid var(--clr-border);
+    color: var(--clr-text-muted);
+    font-size: 0.9rem;
+}
