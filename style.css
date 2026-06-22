@@ -131,37 +131,37 @@ body {
 /* GOMBOK */
 
 .btn {
-  display: inline-block;
-  padding: 0.65rem 1.5rem;
-  background: var(--clr-accent);
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: background var(--transition), transform var(--transition);
-  border: 2px solid var(--clr-accent);
+    display: inline-block;
+    padding: 0.65rem 1.5rem;
+    background: var(--clr-accent);
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background var(--transition), transform var(--transition);
+    border: 2px solid var(--clr-accent);
 }
 
 .btn:hover {
-  background: var(--clr-accent-hover);
-  border-color: var(--clr-accent-hover);
-  transform: translateY(-2px);
+    background: var(--clr-accent-hover);
+    border-color: var(--clr-accent-hover);
+    transform: translateY(-2px);
 }
 
 .btn-sm {
-  padding: 0.4rem 1rem;
-  font-size: 0.85rem;
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
 }
 
 .btn-outline {
-  background: transparent;
-  color: var(--clr-accent);
+    background: transparent;
+    color: var(--clr-accent);
 }
 
 .btn-outline:hover {
-  background: var(--clr-accent);
-  color: #fff;
+    background: var(--clr-accent);
+    color: #fff;
 }
 
 .hero-sub {
@@ -174,30 +174,67 @@ body {
 /* Szekciók */
 
 section {
-  padding: 6rem 0;
+    padding: 6rem 0;
 }
 
 section:nth-of-type(even) {
-  background: var(--clr-surface);
+    background: var(--clr-surface);
 }
 
 .section-title {
-  font-size: clamp(1.6rem, 4vw, 2.2rem);
-  font-weight: 700;
-  margin-bottom: 2.5rem;
-  position: relative;
-  display: inline-block;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    position: relative;
+    display: inline-block;
 }
 
 .section-title::after {
-  content: '';
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 40px;
-  height: 3px;
-  background: var(--clr-accent);
-  border-radius: 2px;
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--clr-accent);
+    border-radius: 2px;
+}
+
+/* RÓLAM */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-text p {
+    color: var(--clr-text-muted);
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.avatar-placeholder {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #dbeafe, #ede9fe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--clr-accent);
+    border: 3px solid var(--clr-border);
+    margin: 0 auto;
+}
+
+.avatar-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /* HOBBIK */
