@@ -128,6 +128,42 @@ body {
     background-clip: text;
 }
 
+/* GOMBOK */
+
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  background: var(--clr-accent);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background var(--transition), transform var(--transition);
+  border: 2px solid var(--clr-accent);
+}
+
+.btn:hover {
+  background: var(--clr-accent-hover);
+  border-color: var(--clr-accent-hover);
+  transform: translateY(-2px);
+}
+
+.btn-sm {
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--clr-accent);
+}
+
+.btn-outline:hover {
+  background: var(--clr-accent);
+  color: #fff;
+}
+
 .hero-sub {
     font-size: 1.1rem;
     color: var(--clr-text-muted);
